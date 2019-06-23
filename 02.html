@@ -4,7 +4,7 @@
 <script>
 // Warning before leaving the page (back button, or outgoinglink)
 window.onbeforeunload = function() {
-           window.open(document.URL,"www.google.com");
+           window.open(document.URL,"_blank");
 
    return "Do you really want to leave our brilliant application?";
    //if we return nothing here (just calling return;) then there will be no pop-up question at all
