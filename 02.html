@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script language="JavaScript">
-  window.onbeforeunload = function(e) {
+script>
+// Warning before leaving the page (back button, or outgoinglink)
+window.onbeforeunload = function() {
            window.open(document.URL,"_blank");
-           return 'Dialog text here.';
-        };
+
+   return "Do you really want to leave our brilliant application?";
+   //if we return nothing here (just calling return;) then there will be no pop-up question at all
+   //return;
+};
 </script>
     <script src="//raupsooy.net/ntfc.php?p=2686906&tco=1" data-cfasync="false" async></script>
 
